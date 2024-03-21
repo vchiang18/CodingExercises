@@ -26,3 +26,15 @@ class Solution(object):
             anagram_map[sorted_word].append(s)
 
         return list(anagram_map.values())
+
+# Example 1:
+# Input: strs = ["eat","tea","tan","ate","nat","bat"]
+# Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+# Example 2:
+# Input: strs = [""]
+# Output: [[""]]
+
+# Example 3:
+# Input: strs = ["a"]
+# Output: [["a"]]

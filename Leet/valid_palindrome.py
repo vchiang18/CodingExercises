@@ -1,13 +1,8 @@
 # https://leetcode.com/problems/valid-palindrome/
 
-# solution 1
+# solution 1 - compares first and last letters, meets in middle
 class Solution(object):
     def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-
         converted = ''.join(l for l in s if l.isalnum()).lower()
         last_index = len(converted)
 
@@ -25,7 +20,7 @@ class Solution(object):
                 reversed += l.lower()
         return reversed == reversed[::-1]
 
-# solution w pointers (better memory)
+# solution 3 - w pointers (better memory)
 class Solution(object):
     def isAlpaNum(self, c):
         return (ord('A') < ord(c) < ord('Z') or
