@@ -8,7 +8,7 @@ class Solution(object):
         output = 0
 
         for r in range(len(s)):
-            while s[r] in letterSet:
+            while s[r] in letterSet:  #removed all letters up til duplicate
                 letterSet.remove(s[l])
                 l += 1
             letterSet.add(s[r])
